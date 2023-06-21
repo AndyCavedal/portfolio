@@ -64,6 +64,18 @@ html {
     margin-right: 100px;
 }
 
+.bi-list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 12px;
+    display: none;
+}
+
+#menu-logo {
+    margin-right: 30px;
+}
+
 /* HOME */
 
 .home__container {
@@ -138,5 +150,17 @@ html {
 
     .home__container {
         align-items: center;
+    }
+
+    .link-derecha {
+        display: none;
+    }
+    
+    .bi-list {
+        display: block;
+    }
+
+    .bi {
+        margin-right: 0px;
     }
 }
