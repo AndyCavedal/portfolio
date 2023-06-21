@@ -42,7 +42,7 @@ html {
     box-shadow: 0px 0px 5px var(--grey);
 }
 
-.header__container li {
+li {
    list-style: none; 
 }
 
@@ -74,6 +74,25 @@ html {
 
 #menu-logo {
     margin-right: 30px;
+}
+
+/* Menu responsive */
+
+.navbar-menu__container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.navbar-menu__container {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    margin-right: 50px;
+    padding-bottom: 6px;
 }
 
 /* HOME */
@@ -126,6 +145,7 @@ html {
 .bi:hover {
     color: var(--html-light-orange);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .portrait__container {
