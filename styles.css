@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 :root {
     --yellow:#FAF565;
     --black:#050505fa;
     --grey: #7a7979;
+    --css-dark-blue: #3667ae;
+    --css-light-blue: #2aa6dc;
+    --html-dark-orange: #f1672b;
+    --html-light-orange: #f37646;
+
 }
 
 * {
@@ -13,7 +21,19 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    font-family: 'Questrial', sans-serif;
+    letter-spacing: 1px;
 }
+
+.display {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
+
+/* HEADER */
 
 .header__container {
     background-color: var(--yellow);
@@ -44,11 +64,15 @@ html {
     margin-right: 100px;
 }
 
+/* HOME */
+
 .home__container {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     height: 900px;
-    margin: 50px;
+    margin: 100px;
 }
 
 .button {
@@ -62,6 +86,8 @@ html {
     font-weight: bold;
     display: inline-block;
     width: 150px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .button:hover {
@@ -71,4 +97,46 @@ html {
 .home__container h1 {
     font-size: 3.5rem;
     line-height: 5.2rem;
+    letter-spacing: 2px;
+}
+
+.home__container .andy {
+    color: black;
+    background-color: var(--yellow);
+}
+
+.bi {
+    font-size: 4rem;
+    margin-right: 30px;
+    color: var(--black);
+}
+
+.bi:hover {
+    color: var(--html-light-orange);
+    border-radius: 10px;
+}
+
+.portrait__container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.portrait__container img {
+    border-radius: 500px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 130px 120px 0px 0px;
+    width: 400px;
+    box-shadow: 0px 0px 4px var(--black);
+}
+
+@media only screen and (max-width: 950px) {
+    .portrait__container img {
+        display: none;
+    }
+
+    .home__container {
+        align-items: center;
+    }
 }
