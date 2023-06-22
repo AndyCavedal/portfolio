@@ -9,7 +9,6 @@
     --css-light-blue: #2aa6dc;
     --html-dark-orange: #f1672b;
     --html-light-orange: #f37646;
-
 }
 
 * {
@@ -79,20 +78,37 @@ li {
 /* Menu responsive */
 
 .navbar-menu__container {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     background-color: var(--grey);
     width: 100%;
     height: 100%;
     position: absolute;
-}
-
-.navbar-menu__container {
+    
     text-decoration: none;
     color: black;
-    font-size: 1.8rem;
+    font-size: 4rem;
     margin-right: 50px;
     padding-bottom: 6px;
+}
+
+.navbar-menu__container a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.navbar-menu__container a:hover {
+    background-color: var(--yellow);
+}
+
+.links {
+    display: inline-block;
+    flex-direction: column;
 }
 
 /* HOME */
