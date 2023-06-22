@@ -192,7 +192,7 @@ li {
     top: 0;
     margin: 130px 120px 0px 0px;
     width: 400px;
-    box-shadow: 0px 0px 4px var(--black);
+    box-shadow: 0px 4px 25px 
 }
 
 /* About Me */
@@ -219,6 +219,7 @@ li {
     font-size: 2rem;
     border-radius: 5px;
     color: white;
+    box-shadow: 0px 4px 25px #bcbcbc;
 }
 
 .content-box span {
