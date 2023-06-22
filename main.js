@@ -29,3 +29,13 @@ listener.addEventListener("click", function () {
         menu.style.display = "none";
     }
 });
+
+var close = document.getElementById('display-close__button');
+
+close.addEventListener("click", function () {
+    if (menu.style.display === "none") {
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+})
