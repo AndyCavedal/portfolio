@@ -13,19 +13,19 @@ console.log('Hello, world!');
 //     }
 // });
 
-var listener = document.getElementById('menu-logo');
-var menu = document.getElementById('menu-slide');
-
 // listener.addEventListener('click', showMenu());
 
 // function showMenu() {
 //     menu.classList.add('none');
 // }
+var listener = document.getElementById('menu-logo');
+var menu = document.getElementById('menu-slide');
+
 
 listener.addEventListener("click", function () {
     if (menu.style.display === "none") {
-        menu.style.display = "block"; // Mostrar el div
+        menu.style.display = "block";
     } else {
-        menu.style.display = "none"; // Ocultar el div
+        menu.style.display = "none";
     }
 });
