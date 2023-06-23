@@ -54,3 +54,17 @@ wsp.addEventListener('click', function() {
     window.location.href = "https://api.whatsapp.com/send?phone=542613452586"
 })
 
+var linkedin = document.getElementById('linkedin-link');
+
+linkedin.addEventListener('click', function() {
+    window.location.href = "https://www.linkedin.com/in/andy-cavedal-a225a8265/"
+})
+
+var discord = document.getElementById('discord-link');
+
+discord.addEventListener('click', function() {
+    window.location.href = "https://www.linkedin.com/in/andy-cavedal-a225a8265/"
+})
+
+
+//id discord 345192148154449920
