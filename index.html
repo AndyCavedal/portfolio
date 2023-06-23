@@ -11,20 +11,20 @@
 
 <body>
 
-    <nav class="header__container">
+    <nav class="header__container" id="header">
         <div class="link-izquierda">
             <a href="">Chango</a>
         </div>
         <div>
             <ul>
                 <li class="link-derecha">
-                    <a href="">Home</a>
-                    <a href="">Sobre</a>
-                    <a href="">Proyectos</a>
-                    <a href="">Habilidades</a>
-                    <a href="">Contacto</a>
+                    <a href="#home">Home</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#contacto">Contacto</a>
                 </li>
-                <i class="bi bi-list" id="menu-logo" ></i>
+                <i class="bi bi-list" id="menu-logo"></i>
             </ul>
         </div>
     </nav>
@@ -33,16 +33,16 @@
         <ul>
             <li class="links">
                 <i class="bi bi-x-circle" id="display-close__button"></i>
-                <a href="" id="home-link">Home</a>
-                <a href="">Sobre</a>
-                <a href="">Proyectos</a>
-                <a href="">Habilidades</a>
-                <a href="">Contacto</a>
+                <a href="#home" id="home-link">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#contacto">Contacto</a>
             </li>
         </ul>
     </div>
 
-    <div class="home__container">
+    <div class="home__container" id="home">
         <h1>Hola,<br> Soy <span class="andy">Andy</span> <br> Frontend Developer</h1>
         <a href="" class="button">Ver CV</a>
         <div class="logos__container">
@@ -55,15 +55,75 @@
             <img src="/src/portrait-screen.png" alt="portrait">
         </div>
     </div>
-    <div class="sobre__container">
+    <div class="sobre__container" id="sobre">
         <h1>Sobre Mi</h1>
         <div class="content-box">
-            <p><span>Soy Andy Cavedal</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minima sed esse illum, maxime libero blanditiis necessitatibus nobis cum veritatis magnam non error dignissimos repudiandae saepe officia nulla excepturi vitae.</p>
+            <p><span>Soy Andy Cavedal</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minima
+                sed esse illum, maxime libero blanditiis necessitatibus nobis cum veritatis magnam non error dignissimos
+                repudiandae saepe officia nulla excepturi vitae.</p>
         </div>
     </div>
-    <div class="proyectos__container">
+    <div class="proyectos__container" id="proyectos">
         <h1>Proyectos</h1>
+        <div class="grid-layout">
+            <div class="box"  id="first-container">
+                <img src="/src/portfolio-screenshot.png" alt="">
+                <h2>Mi Portfolio</h2>
+                <div class="links-container">
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-globe2"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/src/beatclub-screenshot.png" alt="">
+                <h2>Beat Club</h2>
+                <div class="links-container">
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-globe2"></i>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="habilidades__container" id="habilidades">
+        <h1>Habilidades</h1>
+        <p>Mis lenguajes, frameworks, tecnologías y herramientas</p>
+        <div class="lenguajes__container">
+            <h2>Lenguajes</h2>
+            <img src="/src/icon-javascript.svg" alt="js">
+            <img src="/src/icon-html.svg" alt="html">
+            <img src="/src/icon-css.svg" alt="css">
+        </div>
+        <div class="frameworks__container">
+            <h2>Frameworks y Librerías</h2>
+            <img src="/src/icon-react.svg" alt="react">
+            <img src="/src/icon-sass.svg" alt="sass">
+        </div>
+        <div class="tecnologias__container">
+            <h2>Tecnologías y Herramientas</h2>
+            <img src="/src/icon.git.svg" alt="git">
+            <img src="/src/icon-github.svg" alt="github">
+            <img src="/src/icon-npm.svg" alt="npm">
+            <img src="/src/icon-notion.svg" alt="notion">
+            <img src="/src/icon-figma.svg" alt="figma">
+        </div>
+    </div>
+
+    <div class="contacto__container" id="contacto">
+        <h1>Contacto</h1>
+        <div class="contacto-box">
+            <p><i class="bi bi-envelope-at-fill"></i>hcavedal@gmail.com</p>
+            <p><i class="bi bi-telephone-fill"></i>Tel: +54 261 3452586</p>
+            <p><i class="bi bi-geo-alt-fill"></i>Mendoza, Argentina</p>
+            <i class="bi bi-github links"></i>
+            <i class="bi bi-whatsapp links"></i>
+            <i class="bi bi-linkedin links"></i>
+            <i class="bi bi-discord links"></i>
+        </div>
+    </div>
+
+    <footer class="footer__container">
+        <a href="#header"><i class="bi bi-arrow-up"></i>Volver al inicio<i class="bi bi-arrow-up"></i></a>
+    </footer>
     <script src="/main.js"></script>
 </body>
 

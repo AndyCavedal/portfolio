@@ -5,6 +5,7 @@
     --yellow:#FAF565;
     --black:#050505fa;
     --grey: #7a7979;
+    --light-grey: #cfcfcf;
     --css-dark-blue: #3667ae;
     --css-light-blue: #2aa6dc;
     --html-dark-orange: #f1672b;
@@ -192,8 +193,22 @@ li {
     top: 0;
     margin: 130px 120px 0px 0px;
     width: 400px;
-    box-shadow: 0px 4px 25px 
+    box-shadow: 0px 4px 25px;
+    transition: transform 0.5s;
 }
+
+.portrait__container img:hover {
+    animation:spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg); /* Rotación inicial */
+    }
+    to {
+      transform: rotate(360deg); /* Rotación completa de 360 grados */
+    }
+  }
 
 /* About Me */
 
@@ -248,6 +263,169 @@ li {
     padding-bottom: 12px;
 }
 
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: 0px 4px 25px #bcbcbc;
+    border-radius: 5px;
+}
+
+.box {
+    width: 300px;
+    height: 250px;
+    box-shadow: 0px 4px 25px #bcbcbc;
+    overflow: hidden;
+    text-align: center; 
+    border-radius: 10px;   
+    background-color: var(--css-dark-blue);
+}
+
+.box img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.box img:hover {
+    transform: scale(1.1);
+}
+
+.box h2 {
+    display: inline-block;
+    padding: 18px;
+    color: white;
+}
+
+.links-container .bi{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0px;
+    margin: 0px 10px 0px 10px;
+    font-size: 3rem;
+    color: white;
+}
+
+.links-container .bi:hover {
+    color: var(--black);
+}
+
+/* Habilidades */
+
+.habilidades__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.habilidades__container h1 {
+    padding: 20px;
+    font-size: 3.5rem;
+    border-bottom: 3px solid var(--css-light-blue);
+}
+
+.habilidades__container h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 45px;
+    color: var(--css-dark-blue);
+}
+
+.habilidades__container p {
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    font-size: 2.4rem;
+    color: inherit;
+}
+
+.habilidades__container img{
+    width: 100px;
+    margin: 30px 60px 0px 60px;
+    transition: transform 0.3s;
+}
+
+.habilidades__container img:hover {
+    transform: scale(1.2);
+}
+
+/* Contacto */
+
+.contacto__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+
+}
+
+.contacto__container h1 {
+    padding: 20px;
+    font-size: 3.5rem;
+    border-bottom: 3px solid var(--css-light-blue);
+}
+
+.contacto-box {
+    box-shadow: 0px 4px 25px #bcbcbc;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.contacto-box p{
+    font-size: 1.6rem;
+    padding: 10px;
+}
+
+.contacto-box i{
+    font-size: 2rem;
+}
+
+.contacto-box .links{
+    font-size: 3rem;
+    margin: 15px 15px 0px 15px;
+}
+
+.contacto-box .links:hover {
+    color: var(--css-dark-blue);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--yellow);
+    height: 5vh;
+    width: 100%;
+    box-shadow: 0px 0px 5px var(--grey);
+}
+
+.footer__container a {
+    font-size: 1.6rem;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.footer__container i {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.footer__container i:hover {
+    color: inherit;
+}
+
 @media only screen and (max-width: 950px) {
     .portrait__container img {
         display: none;
@@ -267,5 +445,33 @@ li {
 
     .bi {
         margin-right: 0px;
+    }
+
+    .grid-layout {
+        grid-template-columns: auto;
+        box-shadow: none;
+    }
+
+    #first-container {
+        margin-bottom: 50px;
+    }
+
+    .habilidades__container img{
+        width: 90px;
+        margin: 2px;
+        justify-content: center;
+    }
+
+    .tecnologias__container  img{
+        justify-content: space-around;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .content-box {
+        margin: 30px 620px 0px 620px;
+        line-height: 30px;
+        font-size: 2.2rem;
     }
 }
