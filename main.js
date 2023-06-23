@@ -39,3 +39,18 @@ close.addEventListener("click", function () {
         menu.style.display = "none";
     }
 })
+
+// Links 
+
+var github = document.getElementById('github-link');
+
+github.addEventListener('click', function() {
+    window.location.href = "https://github.com/AndyCavedal/portfolio"
+})
+
+var wsp = document.getElementById('wsp-link');
+
+wsp.addEventListener('click', function() {
+    window.location.href = "https://api.whatsapp.com/send?phone=542613452586"
+})
+
