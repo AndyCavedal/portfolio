@@ -329,6 +329,21 @@ li {
     align-items: center;
     justify-content: center;
     margin-top: 80px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tecnologias__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.frameworks__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .habilidades__container h1 {
@@ -342,6 +357,9 @@ li {
     font-size: 2rem;
     padding-top: 45px;
     color: var(--css-dark-blue);
+    width: 100%;
+    display: block;
+    clear: both;
 }
 
 .habilidades__container p {
@@ -356,6 +374,9 @@ li {
     width: 100px;
     margin: 30px 60px 0px 60px;
     transition: transform 0.3s;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .habilidades__container img:hover {
@@ -465,8 +486,10 @@ li {
         justify-content: center;
     }
 
-    .tecnologias__container  img{
-        justify-content: space-around;
+    .contacto__container .bi {
+        margin-right: 5px;
+        flex-direction: row;
+        align-items: center;
     }
 }
 
