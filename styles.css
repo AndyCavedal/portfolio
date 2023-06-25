@@ -84,11 +84,10 @@ li {
 .navbar-menu__container {
     display: inline-block;
     flex-direction: column;
-    background-color: var(--grey);
+    background-color: var(--yellow);
     width: 100vw;
     height: 100%;
     position: absolute;
-    
     text-decoration: none;
     color: black;
     font-size: 4rem;
@@ -119,7 +118,8 @@ li {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    line-height: 100px;
+    line-height: 150px;
+    font-weight: bold;
 }
 
 .navbar-menu__container a:hover {

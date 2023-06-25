@@ -19,8 +19,6 @@ console.log('Hello, world!');
 //     menu.classList.add('none');
 // }
 var listener = document.getElementById('menu-logo');
-var menu = document.getElementById('menu-slide');
-
 
 listener.addEventListener("click", function () {
     if (menu.style.display === "none") {
@@ -30,14 +28,24 @@ listener.addEventListener("click", function () {
     }
 });
 
-var close = document.getElementById('display-close__button');
+var closeBtn = document.getElementById('display-close__button');
+var panelBtn = document.getElementsByClassName('display-button')
+var menu = document.getElementById('menu-slide');
 
-close.addEventListener("click", function () {
+closeBtn.addEventListener("click", function () {
     if (menu.style.display === "none") {
         menu.style.display = "block";
     } else {
         menu.style.display = "none";
     }
-})
+});
 
-//id discord 345192148154449920
+for (var i = 0; i < panelBtn.length; i++) {
+    panelBtn[i].addEventListener("click", function () {
+        if (menu.style.display === "none") {
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    });
+}
