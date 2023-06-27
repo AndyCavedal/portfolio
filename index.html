@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -41,11 +42,10 @@
             </li>
         </ul>
     </div>
-
     <div class="home__container" id="home">
         <h1>Hola,<br> Soy <span class="andy">Andy</span> <br> Frontend Developer</h1>
-        <a href="" class="button">Ver CV</a>
-        <div class="logos__container">
+        <a href="" data-aos="fade-up" class="button">Ver CV</a>
+        <div class="logos__container" data-aos="fade-up">
             <a href="https://github.com/AndyCavedal"><i class="bi bi-github"></i></a>
             <a href="https://api.whatsapp.com/send?phone=542613452586"><i href="/" class="bi bi-whatsapp" id="wsp-link"></i></a>
             <a href="https://www.linkedin.com/in/andy-cavedal-a225a8265/"><i class="bi bi-linkedin" id="linkedin-link"></i></a>
@@ -57,7 +57,7 @@
     </div>
     <div class="sobre__container" id="sobre">
         <h1>Sobre Mi</h1>
-        <div class="content-box">
+        <div class="content-box"   data-aos="fade-up">
             <p><span>Soy Andy Cavedal</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minima
                 sed esse illum, maxime libero blanditiis necessitatibus nobis cum veritatis magnam non error dignissimos
                 repudiandae saepe officia nulla excepturi vitae.</p>
@@ -65,8 +65,9 @@
     </div>
     <div class="proyectos__container" id="proyectos">
         <h1>Proyectos</h1>
+        <div ></div>
         <div class="grid-layout">
-            <div class="box"  id="first-container">
+            <div class="box" id="first-container" data-aos="zoom-in">
                 <img src="/src/portfolio-screenshot.png" alt="">
                 <h2>Mi Portfolio</h2>
                 <div class="links-container">
@@ -74,7 +75,7 @@
                     <i class="bi bi-globe2"></i>
                 </div>
             </div>
-            <div class="box">
+            <div class="box"  data-aos="zoom-in">
                 <img src="/src/beatclub-screenshot.png" alt="">
                 <h2>Beat Club</h2>
                 <div class="links-container">
@@ -87,18 +88,18 @@
     <div class="habilidades__container" id="habilidades">
         <h1>Habilidades</h1>
         <p>Mis lenguajes, frameworks, tecnologías y herramientas</p>
-        <div class="lenguajes__container">
+        <div class="lenguajes__container" data-aos="fade-up">
             <h2>Lenguajes</h2>
             <img src="/src/icon-javascript.svg" alt="js">
             <img src="/src/icon-html.svg" alt="html">
             <img src="/src/icon-css.svg" alt="css">
         </div>
-        <div class="frameworks__container">
+        <div class="frameworks__container" data-aos="fade-up">
             <h2>Frameworks y Librerías</h2>
             <img src="/src/icon-react.svg" alt="react">
             <img src="/src/icon-sass.svg" alt="sass">
         </div>
-        <div class="tecnologias__container">
+        <div class="tecnologias__container" data-aos="fade-up">
             <h2>Tecnologías y Herramientas</h2>
             <img src="/src/icon.git.svg" alt="git">
             <img src="/src/icon-github.svg" alt="github">
@@ -108,7 +109,7 @@
         </div>
     </div>
 
-    <div class="contacto__container" id="contacto">
+    <div class="contacto__container" id="contacto" data-aos="fade-up">
         <h1>Contacto</h1>
         <div class="contacto-box">
             <p><i class="bi bi-envelope-at-fill"></i>hcavedal@gmail.com</p>
@@ -125,6 +126,10 @@
         <a href="#header"><i class="bi bi-arrow-up"></i>Volver al inicio<i class="bi bi-arrow-up"></i></a>
     </footer>
     <script src="/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
