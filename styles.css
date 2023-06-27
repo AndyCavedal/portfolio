@@ -26,8 +26,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* wsp api https://api.whatsapp.com/send?phone=542613452586 */
-
 .display {
     display: flex;
 }
@@ -43,6 +41,15 @@ html {
     padding: 22px;
     display: flex;
     box-shadow: 0px 0px 5px var(--grey);
+    height: 63px;
+}
+
+#javascript-icon {
+    width: 50px;
+    position: absolute;
+    border-radius: 50px;
+    top: 0;
+    margin-top: 8px;
 }
 
 li {
@@ -84,21 +91,16 @@ li {
 .navbar-menu__container {
     display: inline-block;
     flex-direction: column;
-    background-color: var(--yellow);
+    background-color: var(--html-light-orange);
     width: 100vw;
-    height: 100%;
+    height: 300px;
     position: absolute;
     text-decoration: none;
-    color: black;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-right: 50px;
     padding-bottom: 6px;
-    top: 0;
+    top: 63px;
     position: fixed;
-}
-
-.navbar-menu__container #home-link {
-    margin-top: 50px;
 }
 
 .bi-x-circle {
@@ -118,8 +120,9 @@ li {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    line-height: 150px;
+    line-height: 60px;
     font-weight: bold;
+    color: var(--black);
 }
 
 .navbar-menu__container a:hover {
@@ -196,13 +199,9 @@ li {
     top: 0;
     margin: 130px 120px 0px 0px;
     width: 400px;
-    box-shadow: 0px 4px 25px;
-    transition: transform 0.5s;
+    box-shadow: 0px 4px 10px;
 }
 
-.portrait__container img:hover {
-    animation:spin 1s infinite linear;
-}
 
 @keyframes spin {
     from {
@@ -383,6 +382,10 @@ li {
     transform: scale(1.2);
 }
 
+#linux {
+    width: 75px;
+}
+
 /* Contacto */
 
 .contacto__container {
@@ -457,6 +460,10 @@ li {
 
     .home__container {
         align-items: center;
+    }
+
+    .home__container .bi {
+        font-size: 3rem;
     }
 
     .link-derecha {

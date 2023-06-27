@@ -19,21 +19,22 @@ console.log('Hello, world!');
 // function showMenu() {
 //     menu.classList.add('none');
 // }
+
+// listener.addEventListener("click", function () {
+    //     if (menu.style.display === "none") {
+        //         menu.style.display = "block";
+        //     } else {
+            //         menu.style.display = "none";
+            //     }
+            // });
+            
+            // var closeBtn = document.getElementById('display-close__button');
 var listener = document.getElementById('menu-logo');
-
-listener.addEventListener("click", function () {
-    if (menu.style.display === "none") {
-        menu.style.display = "block";
-    } else {
-        menu.style.display = "none";
-    }
-});
-
-var closeBtn = document.getElementById('display-close__button');
-var panelBtn = document.getElementsByClassName('display-button')
+var panelBtn = document.getElementsByClassName('display-button');
 var menu = document.getElementById('menu-slide');
 
-closeBtn.addEventListener("click", function () {
+listener.addEventListener("click", function (event) {
+    event.stopPropagation(); // Detener la propagación del evento click
     if (menu.style.display === "none") {
         menu.style.display = "block";
     } else {
@@ -50,3 +51,13 @@ for (var i = 0; i < panelBtn.length; i++) {
         }
     });
 }
+
+document.addEventListener("click", function (event) {
+    if (!menu.contains(event.target)) {
+        menu.style.display = "none";
+    }
+});
+
+document.addEventListener("touchmove", function () {
+    menu.style.display = "none"; 
+});
