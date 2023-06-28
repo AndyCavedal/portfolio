@@ -278,13 +278,15 @@ li {
     text-align: center; 
     border-radius: 10px;   
     background-color: var(--css-dark-blue);
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .box img {
     display: block;
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s;
 }
 
@@ -389,7 +391,7 @@ li {
     flex-direction: column;
     align-items: center;
     margin-top: 80px;
-
+    
 }
 
 .contacto__container h1 {
@@ -423,6 +425,14 @@ li {
     color: var(--css-dark-blue);
 }
 
+.nohover:hover {
+    cursor:default;
+    color: var(--black);
+}
+
+/* Footer */
+
+
 .footer__container {
     display: flex;
     justify-content: center;
@@ -448,6 +458,7 @@ li {
 .footer__container i:hover {
     color: inherit;
 }
+
 
 @media only screen and (max-width: 950px) {
     .portrait__container img {
@@ -479,7 +490,6 @@ li {
         box-shadow: none;
     }
 
-
     .habilidades__container img{
         width: 90px;
         margin: 2px;
@@ -487,10 +497,11 @@ li {
     }
 
     .contacto__container .bi {
-        margin-right: 5px;
+        margin-right: 0px;
         flex-direction: row;
         align-items: center;
     }
+
 }
 
 
