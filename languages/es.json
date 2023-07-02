@@ -6,12 +6,12 @@
         "contact": "Contacto"
     },
     "home": {
-        "title": "Hola, Soy Frontend Developer",
+        "title": "Hola, <br> Soy <span class='andy'>Andy</span> <br> Frontend Developer",
         "cv_button": "Ver CV"
     },
     "about": {
         "title": "Sobre Mi",
-        "text-box": "Soy Andy Cavedal Soy un apasionado por la programación, la música y la ciencia ficción. No tengas miedo en contactarme para realizar algun trabajo juntos, busco con ansias formar equipos de trabajo! A continuación, verás algunos de los proyectos que he realizado hasta el momento, pero recuerda que en mi GitHub puedes ver todo lo que me he divertido"
+        "text-box": "Soy un apasionado por la programación, la música y la ciencia ficción. No tengas miedo en contactarme para realizar algun trabajo juntos, busco con ansias formar equipos de trabajo! <br> A continuación, verás algunos de los proyectos que he realizado hasta el momento, pero recuerda que en mi GitHub puedes ver todo lo que me he divertido"
     },
     "project": {
         "title": "Proyectos",
@@ -22,7 +22,7 @@
     "skills": {
         "title": "Habilidades",
         "text-box": "Mis lenguajes, frameworks, tecnologías y herramientas",
-        "subtitle-languajes": "Lenguajes",
+        "subtitle-languages": "Lenguajes",
         "subtitle-frameworks": "Frameworks y Librerías",
         "subtitle-techs": "Tecnologías y Herramientas"
     },
@@ -30,7 +30,7 @@
         "title": "Contacto"
     },
     "footer": {
-        "button": "Volver al inicio"
+        "button": "<i class='bi bi-arrow-up'></i>Volver al inicio <i class='bi bi-arrow-up'></i>"
     }
     
 }
