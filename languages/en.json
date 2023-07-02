@@ -1,0 +1,35 @@
+{
+    "header": {
+    "about": "About",
+    "project": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+    },
+    "home": {
+    "title": "Hello, I'm a Frontend Developer",
+    "cv_button": "View CV"
+    },
+    "about": {
+    "title": "About Me",
+    "text-box": "I'm Andy Cavedal. I am passionate about programming, music, and science fiction. Don't hesitate to contact me for any collaborative work. I eagerly look forward to forming teams! Below, you'll find some of the projects I have completed so far. However, remember that you can see all the fun I've had on my GitHub."
+    },
+    "project": {
+    "title": "Projects",
+    "portfolio-box": "My Portfolio",
+    "NPM-box": "Random String NPM",
+    "google-box": "Google Clone"
+    },
+    "skills": {
+    "title": "Skills",
+    "text-box": "My languages, frameworks, technologies, and tools",
+    "subtitle-languages": "Languages",
+    "subtitle-frameworks": "Frameworks and Libraries",
+    "subtitle-techs": "Technologies and Tools"
+    },
+    "contact": {
+    "title": "Contact"
+    },
+    "footer": {
+    "button": "Back to Home"
+    }
+    }

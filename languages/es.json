@@ -1,0 +1,36 @@
+{
+    "header": {
+        "about": "Sobre",
+        "project": "Proyectos",
+        "skills": "Habilidades",
+        "contact": "Contacto"
+    },
+    "home": {
+        "title": "Hola, Soy Frontend Developer",
+        "cv_button": "Ver CV"
+    },
+    "about": {
+        "title": "Sobre Mi",
+        "text-box": "Soy Andy Cavedal Soy un apasionado por la programación, la música y la ciencia ficción. No tengas miedo en contactarme para realizar algun trabajo juntos, busco con ansias formar equipos de trabajo! A continuación, verás algunos de los proyectos que he realizado hasta el momento, pero recuerda que en mi GitHub puedes ver todo lo que me he divertido"
+    },
+    "project": {
+        "title": "Proyectos",
+        "portfolio-box": "Mi Portafolio",
+        "NPM-box": "NPM string aleatorio",
+        "google-box": "Clon de Google"
+    },
+    "skills": {
+        "title": "Habilidades",
+        "text-box": "Mis lenguajes, frameworks, tecnologías y herramientas",
+        "subtitle-languajes": "Lenguajes",
+        "subtitle-frameworks": "Frameworks y Librerías",
+        "subtitle-techs": "Tecnologías y Herramientas"
+    },
+    "contact": {
+        "title": "Contacto"
+    },
+    "footer": {
+        "button": "Volver al inicio"
+    }
+    
+}

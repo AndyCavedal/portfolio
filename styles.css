@@ -86,6 +86,21 @@ li {
     margin-right: 30px;
 }
 
+.flags {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flags__item {
+    width: 30px;
+}
+
+.flags img {
+    display: block;
+    cursor: pointer;
+}
 /* Menu responsive */
 
 .navbar-menu__container {
