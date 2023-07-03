@@ -94,13 +94,23 @@ li {
 }
 
 .flags__item {
-    width: 30px;
+    width: 50px;
+    padding: 3px;
+    transition: 0.5s ease-in-out;
+    background-position: 100% 0;
+
 }
 
 .flags img {
     display: block;
     cursor: pointer;
 }
+
+.selected {
+    background-color: var(--css-dark-blue);
+    background-position: 0 0;
+}
+
 /* Menu responsive */
 
 .navbar-menu__container {

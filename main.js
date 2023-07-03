@@ -84,3 +84,16 @@ const changeLanguage = async language=> {
 flagsElement.addEventListener('click', (e) => {
     changeLanguage(e.target.parentElement.dataset.language);
 });
+
+const btnEnglish = document.getElementById('eng-flag');
+const btnSpanish = document.getElementById('esp-flag');
+
+btnEnglish.addEventListener('click', function() {
+  btnEnglish.classList.add('selected');
+  btnSpanish.classList.remove('selected');
+});
+
+btnSpanish.addEventListener('click', function() {
+  btnSpanish.classList.add('selected');
+  btnEnglish.classList.remove('selected');
+});
